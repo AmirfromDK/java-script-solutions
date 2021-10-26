@@ -45,4 +45,20 @@ const isPalindrome = (input) => {
     return false
 }
 
-console.log(isPalindrome(1231))
+// console.log(isPalindrome(1231))
+
+const findBinary = (decimal, result) => {
+    if (typeof decimal !== 'number') {
+        return 'please enter a number'
+    }
+
+    if (decimal === 0) {
+        return result
+    }
+
+    result = Math.floor(decimal % 2) + result
+    return findBinary(Math.floor(decimal / 2), result)
+
+}
+
+console.log(findBinary(6, ''))
