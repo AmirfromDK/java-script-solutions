@@ -61,4 +61,24 @@ const findBinary = (decimal, result) => {
 
 }
 
-console.log(findBinary(6, ''))
+// console.log(findBinary(6, ''))
+
+const binarySearch = (list, left, right, item) => {
+    if (left > right) {
+        return -1
+    }
+
+    const mid = Math.floor((left + right) / 2)
+
+    if (item === list[mid]) {
+        return mid
+    }
+
+    if (item > list[mid]) {
+        return binarySearch(list, mid + 1, right, item)
+    }
+
+    return binarySearch(list, left, mid - 1, item)
+}
+
+console.log(binarySearch([-1, 5, 8, 9, 12], 0, 4, 9))
