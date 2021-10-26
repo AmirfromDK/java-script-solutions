@@ -26,4 +26,23 @@ const recursiveSummation = (input) => {
 
 }
 
-console.log(recursiveSummation(3))
+// console.log(recursiveSummation(3))
+
+
+const isPalindrome = (input) => {
+    if (typeof input === 'number') {
+        input = input.toString()
+    }
+
+    if (input.length === 1 || input.length === 0) {
+        return true
+    }
+
+    if (input[0] === input[input.length - 1]) {
+        return isPalindrome(input.substring(1, input.length - 1))
+    }
+
+    return false
+}
+
+console.log(isPalindrome(1231))
