@@ -1,0 +1,6 @@
+1. fibo (none-optimize) => number return number in sequence in fibo Ex. 4 return 3
+2. recursiveSummation => 10 return 10+9+8+7+6+...+1 = 55
+3. isPalindrome => 'keyek' return true
+4. findBinary => 6, '' return 110
+5. binarySearch (recursive) => sorted list, firstIndex, lastIndex, item return indexOfItem
+6. mergeSort => get unsorted list and return ascending list
