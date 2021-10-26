@@ -81,4 +81,30 @@ const binarySearch = (list, left, right, item) => {
     return binarySearch(list, left, mid - 1, item)
 }
 
-console.log(binarySearch([-1, 5, 8, 9, 12], 0, 4, 9))
+// console.log(binarySearch([-1, 5, 8, 9, 12], 0, 4, 9))
+
+const mergeSort = (list) => {
+    if (list.length <= 1) {
+        return list
+    }
+    const mid = list.length / 2
+    const left = list.splice(0, mid)
+    return merge(mergeSort(left), mergeSort(list))
+
+}
+
+const merge = (left, right) => {
+    let arr = []
+
+    while (left.length && right.length) {
+        if (left[0] > right[0]) {
+            arr.push(right.shift())
+        } else {
+            arr.push(left.shift())
+        }
+    }
+
+    return [...arr, ...left, ...right]
+}
+
+console.log(mergeSort([-5, 10, -1, 5, 15]))
