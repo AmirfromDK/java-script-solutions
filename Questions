@@ -4,3 +4,26 @@
 4. findBinary => 6, '' return 110
 5. binarySearch (recursive) => sorted list, firstIndex, lastIndex, item return indexOfItem
 6. mergeSort => get unsorted list and return ascending list
+7. Create a function which returns the number of true values there are in an array.
+8. The right shift operation is similar to floor division by powers of two. Write a function that mimics (without the use of >>)
+ the right shift operator and returns the result from the two given integers. ==> shiftToRight(80, 3) ➞ 10
+9. Given three arguments — an object obj of the stolen items, the pets name and a value — return an object with that name and value in it (as key-value pairs). addName({}, "Brutus", 300) ➞ { Brutus: 300 }
+10. Write a function that converts an object into an array, where each element represents a key-value pair in the form of an array. ==> toArray({ a: 1, b: 2 }) ➞ [["a", 1], ["b", 2]]
+11. contain value in nestedObject
+    const nestedObject = {
+        data: {
+            info: {
+                stuff: {
+                    thing: {
+                        moreStuff: {
+                            magicNumber: 44,
+                            something: 'foo2'
+                        }
+                    }
+                }
+            }
+        }
+    }
+12. totalIntegers in nestedObject
+    [[[5], 3], 0, 2, ['foo'], [], [4, [5, 6]]] ==> 7
+13. fibo optimize
