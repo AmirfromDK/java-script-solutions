@@ -146,6 +146,12 @@ const addName = (obj, name, value) => {
 
 // console.log(addName({ piano: 500 }, "Brutus", 300))
 
+//Q10
+const toArray = (obj) => {
+    return Object.entries(obj)
+}
+
+// console.log(toArray({key:'value', key1:'value1'}))
 
 //Q11
 const contain = (obj, value) => {
@@ -177,5 +183,24 @@ const nestedObject = {
         }
     }
 }
+
+//Q12
+const totalIntegers = (arr) => {
+    let counter = 0
+    if (arr.length === 0) return 0
+
+    const first = arr.shift()
+
+    if (Array.isArray(first)) {
+        counter += totalIntegers(first)
+    }
+
+    if (Number.isInteger(first)) {
+        counter++
+    }
+    return counter + totalIntegers(arr)
+}
+
+// console.log(totalIntegers([[[5], 3], 0, 2, ['foo'], [], [4, [5, 6]]]))
 
 // console.log(contain(nestedObject, 44))
