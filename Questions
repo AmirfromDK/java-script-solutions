@@ -27,3 +27,40 @@
 12. totalIntegers in nestedObject
     [[[5], 3], 0, 2, ['foo'], [], [4, [5, 6]]] ==> 7
 13. fibo optimize
+14. question url in quera => https://quera.ir/problemset/28947/
+15. question url in quera => https://quera.ir/problemset/280/
+16. question url in quera => https://quera.ir/problemset/4065/
+17. question url in quera => https://quera.ir/problemset/2659/
+18. question url in quera => https://quera.ir/problemset/10231/
+19. Write a program that takes the radius of a circle and shows its circumference and area
+20. Write a program that takes the sides of a triangle as variables and prints the type of triangle(Equilateral, Isosceles, Different side).
+21. Write a program that takes a digit as input and specifies the number of digits.
+22. Write a program that takes two numbers as input and prints common divisors as output.
+23. Write a program that identifies the greatest divisor of two numbers
+24. Write a program that takes the grades of different students and calculates the average of grades above 15
+25. Write a program that takes an array of numbers and specifies how many of them are less than the average of the numbers entered.
+26. Write a program that receives a string and a character as input and shows how many times this character is repeated in the string.
+27. There are two arrays with individual values, write a JavaScript program to compute the sum of each individual index value from the given arrays. input ==> array1 = [1,0,2,3,4], array2 = [3,5,6,7,8,13] ==> output = [4, 5, 8, 10, 12, 13]
+28. Write a JavaScript function to get humanized number with the correct suffix such as 1st, 2nd, 3rd or 4th. input = 1 ==> output = '1st', input = 20 ==> output = '20th', input = 302 ==> output = '302nd'
+29. Write a JavaScript function to generate an array of specified length, filled with integer numbers, increase by one from starting position. ==> input = 1, 4 , output = [1, 2, 3, 4]
+30. Write a JavaScript program which returns a subset of a string. input = ali, output = [ 'a', 'al', 'ali', 'l', 'li', 'i' ]
+31. Write a JavaScript program to get the integers in range (x, y). input = (2, 9), output = [3, 4, 5, 6, 7, 8]
+32. Write a function that takes a number and returns the inverse of the number. input = 12345, output = 54321
+33. Write a function that takes a array of numbers and returns the sum of them. input = [1, 2, 3, 4, 5, 6], output = 21
+34. Write the return function that the logarithm of a number in the given base. input = n:16 base:2, output = 4
+35. Write a function that prints numbers between 0 and 15 with the calculation of even or odd. output = "0 is even" \n "1 is odd" \n "2 is even" ...
+36. Write a function that takes a number as the side of a triangle and prints the following output. input = 5, output = *
+                                                                                                                        * *
+                                                                                                                        * * *
+                                                                                                                        * * * *
+                                                                                                                        * * * * *
+37. Write a function that has the following input and output. input : ["Red", "Green", "White", "Black"], output : "Red+Green+White+Black"
+38. Write a function that takes a number and puts an "-" between the two even numbers. input = 025468, output = 254-6-8
+39. Write a JavaScript function to check whether an input is an array or not. input = [1], output = true
+40. Write a JavaScript program to sort the items of an integer array.
+41. Write a JavaScript program to find the most frequent item of an array
+42. Write a JavaScript program to shuffle an array.
+43. Write a JavaScript program to compute the union of two arrays.
+44. Write a JavaScript function to get the number of occurrences of each letter in specified string. Input = "hello world", Output: {h:1, e:1, l:3, o:2, r:1, l:3, d:1}
+45. you are a traveler on a 2d grid. you begin in the top-left corner and your goal is travel to bottom-right corner. you may only move down or right.
+    in how many ways can you travel to the goal on a grid with dimensions m * n ?
