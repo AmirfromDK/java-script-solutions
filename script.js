@@ -107,4 +107,65 @@ const merge = (left, right) => {
     return [...arr, ...left, ...right]
 }
 
-console.log(mergeSort([-5, 10, -1, 5, 15]))
+// console.log(mergeSort([-5, 10, -1, 5, 15]))
+
+
+const countTrue = (arr) => {
+    let counter = 0
+
+    for (const arrKey of arr) {
+        if (arrKey) {
+            counter++
+        }
+    }
+    return counter
+}
+
+// console.log(countTrue([true, false, false, true, false]))
+
+const shiftToRight = (x, y) => {
+    if (y <= 0) return x
+
+    return shiftToRight(Math.floor(x / 2), y - 1)
+}
+
+// console.log(shiftToRight(80, 3))
+
+const addName = (obj, name, value) => {
+    obj[name] = value
+    return obj
+}
+
+// console.log(addName({ piano: 500 }, "Brutus", 300))
+
+const contain = (obj, value) => {
+    for (const key in obj) {
+        // base case
+        if (obj[key] === value)
+            return true
+
+        if (typeof obj[key] === 'object') {
+            return contain(obj[key], value)
+        }
+
+    }
+
+    return false
+}
+
+const nestedObject = {
+    data: {
+        info: {
+            stuff: {
+                thing: {
+                    moreStuff: {
+                        magicNumber: 44,
+                        something: 'foo2',
+                    }
+                }
+            }
+        }
+    }
+}
+
+// console.log(contain(nestedObject, 44))
