@@ -1,3 +1,4 @@
+// Q1
 const fibo = (input) => {
     if (typeof input !== 'number') {
         return 'please enter a number'
@@ -12,7 +13,7 @@ const fibo = (input) => {
 
 // console.log(fibo(4))
 
-
+// Q2
 const recursiveSummation = (input) => {
     if (typeof input !== 'number') {
         return 'please enter a number'
@@ -28,7 +29,7 @@ const recursiveSummation = (input) => {
 
 // console.log(recursiveSummation(3))
 
-
+//Q3
 const isPalindrome = (input) => {
     if (typeof input === 'number') {
         input = input.toString()
@@ -47,6 +48,7 @@ const isPalindrome = (input) => {
 
 // console.log(isPalindrome(1231))
 
+//Q4
 const findBinary = (decimal, result) => {
     if (typeof decimal !== 'number') {
         return 'please enter a number'
@@ -63,6 +65,7 @@ const findBinary = (decimal, result) => {
 
 // console.log(findBinary(6, ''))
 
+//Q5
 const binarySearch = (list, left, right, item) => {
     if (left > right) {
         return -1
@@ -83,6 +86,8 @@ const binarySearch = (list, left, right, item) => {
 
 // console.log(binarySearch([-1, 5, 8, 9, 12], 0, 4, 9))
 
+
+//Q6
 const mergeSort = (list) => {
     if (list.length <= 1) {
         return list
@@ -110,6 +115,7 @@ const merge = (left, right) => {
 // console.log(mergeSort([-5, 10, -1, 5, 15]))
 
 
+//Q7
 const countTrue = (arr) => {
     let counter = 0
 
@@ -123,6 +129,7 @@ const countTrue = (arr) => {
 
 // console.log(countTrue([true, false, false, true, false]))
 
+//Q8
 const shiftToRight = (x, y) => {
     if (y <= 0) return x
 
@@ -131,6 +138,7 @@ const shiftToRight = (x, y) => {
 
 // console.log(shiftToRight(80, 3))
 
+//Q9
 const addName = (obj, name, value) => {
     obj[name] = value
     return obj
@@ -138,6 +146,8 @@ const addName = (obj, name, value) => {
 
 // console.log(addName({ piano: 500 }, "Brutus", 300))
 
+
+//Q11
 const contain = (obj, value) => {
     for (const key in obj) {
         // base case
