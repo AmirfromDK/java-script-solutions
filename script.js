@@ -168,6 +168,7 @@ const contain = (obj, value) => {
 
     return false
 }
+// console.log(contain(nestedObject, 44))
 
 const nestedObject = {
     data: {
@@ -203,4 +204,3 @@ const totalIntegers = (arr) => {
 
 // console.log(totalIntegers([[[5], 3], 0, 2, ['foo'], [], [4, [5, 6]]]))
 
-// console.log(contain(nestedObject, 44))
