@@ -1,17 +1,33 @@
 // Q1
+
+// 1 1 2 3 5 8 ...
 const fibo = (input) => {
     if (typeof input !== 'number') {
         return 'please enter a number'
     }
 
-    if (input === 0 || input === 1) {
+    if (input <= 1) {
         return input
     }
 
     return fibo(input - 1) + fibo(input - 2)
 }
 
-// console.log(fibo(4))
+// console.log(fibo(50))
+
+//Q13
+const fiboOptimize = (n, memo={}) => {
+    if (n in memo) return memo[n]
+
+    if (n <= 1) {
+        return n
+    }
+
+    memo[n] = fiboOptimize(n - 1, memo) + fiboOptimize(n - 2, memo)
+    return memo[n]
+}
+
+console.log(fiboOptimize(50))
 
 // Q2
 const recursiveSummation = (input) => {
